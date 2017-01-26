@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<FlowPane orientation="VERTICAL" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.DetailController">
+   <children>
+      <Pane minHeight="50.0" minWidth="600.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="label_boardId" layoutX="14.0" layoutY="18.0" />
+            <TextField fx:id="textField_boardTitle" layoutX="67.0" layoutY="14.0" prefHeight="23.0" prefWidth="516.0" />
+         </children>
+      </Pane>
+      <Pane minHeight="50.0" minWidth="600.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="label_boardWriter" layoutX="14.0" layoutY="18.0" text="Label" />
+            <Label fx:id="label_boardDate" layoutX="300.0" layoutY="18.0" text="Label" />
+         </children>
+      </Pane>
+      <TextArea fx:id="textArea_boardContent" minHeight="250.0" minWidth="600.0" prefHeight="250.0" prefWidth="600.0" />
+      <Pane minHeight="50.0" minWidth="600.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="380.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickSave" text="저장" />
+            <Button layoutX="454.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickDelete" text="삭제" />
+            <Button layoutX="524.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickCannel" text="취소" />
+         </children>
+      </Pane>
+   </children>
+</FlowPane>

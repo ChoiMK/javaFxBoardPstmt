@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <bottom>
+      <Pane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="18.0" text="검색기준" />
+            <ComboBox fx:id="comboBox_search" layoutX="77.0" layoutY="14.0" prefHeight="23.0" prefWidth="94.0" />
+            <TextField fx:id="textField_search" layoutX="184.0" layoutY="14.0" prefHeight="23.0" prefWidth="187.0" />
+            <Button layoutX="381.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickSearch" text="검색" />
+            <Button layoutX="443.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickDelete" text="삭제" />
+            <Button layoutX="506.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickInsert" text="신규" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <TableView fx:id="tableView_boardList" minHeight="350.0" minWidth="600.0" prefHeight="350.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
